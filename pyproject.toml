@@ -1,0 +1,14 @@
+[project]
+name = "AWS_DBT_snowflake"
+version = "0.1.0"
+description = "DBT Snowflake Data Project"
+requires-python = ">=3.12"
+dependencies = [
+    "dbt-core==1.11.2",
+    "dbt-snowflake>=1.11.2",
+]
+
+[tool.uv]
+override-dependencies = [
+    "snowflake-connector-python==4.7.5"
+]
